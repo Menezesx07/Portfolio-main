@@ -22,7 +22,7 @@
             </div>
         </aside>
         <div class="right-side">
-            <img src="../assets/Code typing-pana.png">
+            <img src="../assets/typing-pana.png">
         </div>
     </div>
 
