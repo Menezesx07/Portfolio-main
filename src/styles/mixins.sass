@@ -1,0 +1,22 @@
+@use './variables'
+
+@mixin center
+    display: flex
+    align-items: center
+    justify-content: center
+
+@mixin center-1
+    display: flex
+    align-items: center
+    
+
+@mixin btn
+    padding: 0.8rem
+    text-decoration: none
+    border: 2px solid white
+    color: variables.$text-color
+
+@mixin btn-hover
+    border: none
+    transition: 0.5s
+    text-decoration: none

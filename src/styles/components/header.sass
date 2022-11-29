@@ -1,0 +1,22 @@
+@use '../variables'
+@use '../mixins'
+
+header
+    @include mixins.center-1
+    justify-content: space-between
+    height: 13vh
+    background-color: variables.$body-bg-color
+
+.logo
+    color: variables.$text-color-green
+    position: relative 
+    left: 10%
+
+.menu
+    display: flex
+    flex-direction: row
+    margin-right: 10vh
+
+    span
+        padding: 2rem
+        color: variables.$text-color

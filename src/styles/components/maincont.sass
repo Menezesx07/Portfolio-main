@@ -1,0 +1,54 @@
+@use '../variables'
+@use '../mixins'
+
+.main-container
+    display: flex
+    flex-direction: row
+    height: 80vh
+
+.aside-main
+    @include mixins.center
+    background-color: variables.$bg-color
+    width: 50%
+    color: variables.$text-color
+    
+    p
+        padding: 0.8rem
+    
+    #hi
+        font-size: 40px
+        
+
+    #rafael
+        font-size: 60px
+        margin-left: 30px
+        color: variables.$text-color-green
+        font-weight: 600
+    
+    #full
+        font-size: 30px
+
+    .section-main
+        width: 50%
+        display: flex
+        position: relative
+        left: 10%
+   
+    a
+        @include mixins.btn
+        
+        
+    
+    #git:hover
+        background-color: rgb(228, 77 , 38)
+        @include mixins.btn-hover
+        
+
+
+
+
+.right-side
+    @include mixins.center
+    background-color: variables.$bg-color-secondary
+    width: 50%
+

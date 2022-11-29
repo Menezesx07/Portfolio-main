@@ -1,0 +1,40 @@
+@use '../variables'
+@use '../mixins'
+
+
+aside
+    color: variables.$text-color
+
+.main-container
+    background-color: variables.$body-bg-color
+    height: 80vh
+
+.img 
+    @include mixins.center
+
+    img 
+        width: 40%
+    
+aside
+    width: 50%
+    display: flex
+    justify-content: center
+    flex-direction: column
+
+    #about
+        color: variables.$text-color-green
+        margin-bottom: 30px
+        font-size: 40px
+
+.curriculum
+    width: 50%
+    height: 100px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-left: 40px
+    padding: 1rem
+
+    a
+        @include mixins.btn
+        
